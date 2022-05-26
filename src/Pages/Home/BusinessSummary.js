@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BusinessSummary = () => {
     return (
@@ -39,9 +40,10 @@ const BusinessSummary = () => {
                     </div>
                     <div class="stat-title">Client Reviews</div>
                     <div class="stat-value">2000+</div>
-                    <div class="stat-desc">↗︎ 367 (74%)</div>
+                    <div class="stat-desc">↗︎ 37 (74%)</div>
                 </div>
             </div>
+            
         </div>
     );
 };
