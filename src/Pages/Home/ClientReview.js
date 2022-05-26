@@ -19,7 +19,7 @@ const ClientReview = () => {
     return (
         <section className='my-28'>
 
-            <h2 className='lg:text-5xl md:text-3xl text-xl text-center text-accent font-bold my-16'>What our Customers say</h2>
+            <h2 className='lg:text-5xl md:text-3xl text-xl text-center text-accent font-bold my-16'>What our Customers says</h2>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
                 {
