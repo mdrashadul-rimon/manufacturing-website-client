@@ -8,7 +8,7 @@ const Contact = () => {
             <div className="max-w-screen-xl mb-8 mt-24 px-8 grid gap-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 rounded-lg shadow-lg">
                 <div className="flex flex-col justify-between">
                     <div>
-                        <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
+                        <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Hey! Lets talk about everything!</h2>
                         <div className="text-gray-700 mt-8">
                             Hate forms? Send us an <span className="underline">email</span> instead.
                         </div>
