@@ -10,7 +10,7 @@ const NotFound = () => {
                     <div className="grid grid-cols-1 ">
                         <div className="text-center">
                             <div className="four_zero_four_bg">
-                                <h1 className="text-center ">404</h1>
+                                <h1 className="text-center ">404 Error</h1>
                             </div>
 
                             <div className="contant_box_404">
