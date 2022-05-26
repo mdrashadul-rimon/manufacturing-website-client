@@ -26,10 +26,7 @@ const MyProfile = () => {
                     const img = result.data.url;
                     const doctor = {
                         name: data.name,
-                        minOrderQuantity: data.minOrderQuantity,
-                        availableQuantity: data.availableQuantity,
-                        price: data.price,
-                        description: data.description,
+                        email: data.email,
                         img: img
                     }
                     // send to your database 
@@ -88,85 +85,25 @@ const MyProfile = () => {
 
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
-                        <span className="label-text">Minimum Quantity</span>
+                        <span className="label-text">Email</span>
                     </label>
                     <input
-                        type="number"
-                        placeholder="Minimum Quantity"
-                        className="input input-bordered w-full max-w-xs"
-                        min={10}
-                        {...register("minOrderQuantity", {
-                            required: {
-                                value: true,
-                                message: 'Minimum Quantity is not set'
-                            }
-                        })}
-                    />
-                    <label className="label">
-                        {errors.minOrderQuantity?.type === 'required' && <span className="label-text-alt text-red-500">{errors.minOrderQuantity.message}</span>}
-                    </label>
-                </div>
-
-                <div className="form-control w-full max-w-xs">
-                    <label className="label">
-                        <span className="label-text">Availabe Quantity</span>
-                    </label>
-                    <input
-                        type="number"
-                        placeholder="Set Availabe Quantity"
-                        className="input input-bordered w-full max-w-xs"
-                        min={0}
-                        {...register("availableQuantity", {
-                            required: {
-                                value: true,
-                                message: 'Available Quantity is not set'
-                            }
-                        })}
-                    />
-                    <label className="label">
-                        {errors.availableQuantity?.type === 'required' && <span className="label-text-alt text-red-500">{errors.availableQuantity.message}</span>}
-                    </label>
-                </div>
-                <div className="form-control w-full max-w-xs">
-                    <label className="label">
-                        <span className="label-text">Per Unit Price</span>
-                    </label>
-                    <input
-                        type="number"
-                        placeholder="Per Unit Price"
-                        className="input input-bordered w-full max-w-xs"
-                        min={0}
-                        {...register("price", {
-                            required: {
-                                value: true,
-                                message: 'Price is not set'
-                            }
-                        })}
-                    />
-                    <label className="label">
-                        {errors.price?.type === 'required' && <span className="label-text-alt text-red-500">{errors.price.message}</span>}
-                    </label>
-                </div>
-                <div className="form-control w-full max-w-xs">
-                    <label className="label">
-                        <span className="label-text">Product Description</span>
-                    </label>
-                    <textarea
                         type="text"
-                        placeholder="Product Description"
+                        placeholder="Email"
                         className="input input-bordered w-full max-w-xs"
-                        {...register("description", {
+                        {...register("email", {
                             required: {
                                 value: true,
-                                message: 'Description is required'
+                                message: 'Email is Required'
                             }
                         })}
                     />
                     <label className="label">
-                        {errors.description?.type === 'required' && <span className="label-text-alt text-red-500">{errors.description.message}</span>}
+                        {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
                     </label>
                 </div>
 
+               
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
                         <span className="label-text">Upload Photo</span>
