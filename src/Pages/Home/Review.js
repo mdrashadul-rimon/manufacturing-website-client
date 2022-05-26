@@ -13,7 +13,7 @@ const Review = ({ review, setReviewProduct }) => {
     setReviewProduct(review);
 
     return (
-        <div className='grid lg:grid-cols-3 grid-cols-1 justify-center px-8'>
+        <div className='grid grid-cols-1'>
             <div className="card bg-base-100 shadow-xl image-full">
                 <figure><img src="https://i.ibb.co/jG3fPPq/njOwkLa.jpg" alt="Album" /></figure>
                 <div className="card-body">
