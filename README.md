@@ -40,5 +40,6 @@ Live site: https://elevator-manufacturing.web.app/
             * user can cancel a payment
             * user can pay his / her product using stripe card
             * card method added using stripe
+            * Paid status if paid
             * etc.
 
