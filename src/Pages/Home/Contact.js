@@ -19,12 +19,12 @@ const Contact = () => {
                     <div>
                         <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
                         <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                            type="text" placeholder="Your Name" required />
+                            type="text" placeholder="Your Full Name" required />
                     </div>
                     <div className="mt-8">
                         <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
                         <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" placeholder='Your Email'
-                            type="text" required/>
+                            type="email" required/>
                     </div>
                     <div className="mt-8">
                         <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
